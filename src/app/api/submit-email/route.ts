@@ -1,0 +1,64 @@
+import { NextResponse } from 'next/server'
+import { saveEmail, getAllEmails, getEmailCount, initDatabase } from '@/lib/db'
+
+// Initialize database on first request
+let dbInitialized = false
+
+async function ensureDbInitialized() {
+  if (!dbInitialized) {
+    await initDatabase()
+    dbInitialized = true
+  }
+}
+
+export async function POST(request: Request) {
+  try {
+    const { email, sourcePage } = await request.json()
+
+    if (!email || !email.includes('@')) {
+      return NextResponse.json(
+        { error: 'Invalid email address' },
+        { status: 400 }
+      )
+    }
+
+    await ensureDbInitialized()
+
+    const savedEmail = await saveEmail(email, sourcePage)
+
+    return NextResponse.json(
+      {
+        success: true,
+        message: 'Email saved successfully',
+        data: savedEmail
+      },
+      { status: 200 }
+    )
+  } catch (error) {
+    console.error('Error saving email:', error)
+    return NextResponse.json(
+      { error: 'Failed to save email' },
+      { status: 500 }
+    )
+  }
+}
+
+export async function GET() {
+  try {
+    await ensureDbInitialized()
+
+    const emails = await getAllEmails()
+    const count = await getEmailCount()
+
+    return NextResponse.json(
+      { emails, count },
+      { status: 200 }
+    )
+  } catch (error) {
+    console.error('Error reading emails:', error)
+    return NextResponse.json(
+      { error: 'Failed to read emails' },
+      { status: 500 }
+    )
+  }
+}

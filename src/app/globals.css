@@ -1,0 +1,134 @@
+@import "tailwindcss";
+
+@theme {
+  --color-warm-blue-50: #f8fbff;
+  --color-warm-blue-100: #e8f3ff;
+  --color-warm-blue-200: #d4e8ff;
+  --color-warm-blue-300: #a8d0f5;
+  --color-warm-blue-400: #7db8e8;
+  --color-warm-blue-500: #6ba8d9;
+  --color-warm-blue-600: #5891c2;
+  --color-warm-blue-700: #4576a0;
+  --color-warm-blue-800: #355d7e;
+  --color-warm-blue-900: #284560;
+
+  --color-warm-beige-50: #fffdfb;
+  --color-warm-beige-100: #fdf9f5;
+  --color-warm-beige-200: #f8f2ea;
+  --color-warm-beige-300: #f0e5d6;
+  --color-warm-beige-400: #e5d3ba;
+  --color-warm-beige-500: #d4bc9d;
+  --color-warm-beige-600: #bfa47f;
+  --color-warm-beige-700: #a28866;
+  --color-warm-beige-800: #826d51;
+  --color-warm-beige-900: #64543e;
+
+  --color-soft-pink-50: #fff9fb;
+  --color-soft-pink-100: #fff2f7;
+  --color-soft-pink-200: #ffe5ef;
+  --color-soft-pink-300: #ffd4e5;
+  --color-soft-pink-400: #ffb8d4;
+  --color-soft-pink-500: #ff9ec4;
+  --color-soft-pink-600: #f27ba8;
+
+  --animate-float-slow: float-slow 20s ease-in-out infinite;
+  --animate-float-slower: float-slower 25s ease-in-out infinite;
+  --animate-float-slowest: float-slowest 30s ease-in-out infinite;
+  --animate-fade-in-up: fade-in-up 0.8s ease-out;
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 255, 255, 255;
+  --background-end-rgb: 255, 255, 255;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+/* Framer-inspired smooth animations */
+@keyframes float-slow {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(30px, -30px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+}
+
+@keyframes float-slower {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(-40px, 30px) scale(1.15);
+  }
+  66% {
+    transform: translate(30px, -25px) scale(0.95);
+  }
+}
+
+@keyframes float-slowest {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(25px, 35px) scale(1.05);
+  }
+  66% {
+    transform: translate(-30px, -20px) scale(0.92);
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-float-slow {
+  animation: float-slow 20s ease-in-out infinite;
+}
+
+.animate-float-slower {
+  animation: float-slower 25s ease-in-out infinite;
+}
+
+.animate-float-slowest {
+  animation: float-slowest 30s ease-in-out infinite;
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.8s ease-out;
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+/* Better focus states for accessibility */
+*:focus-visible {
+  outline: 2px solid #7db8e8;
+  outline-offset: 2px;
+}
