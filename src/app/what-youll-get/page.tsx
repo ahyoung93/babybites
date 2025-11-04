@@ -157,8 +157,8 @@ export default function WhatYoullGet() {
                 </div>
 
                 {/* Content Card */}
-                <div className="flex-1 bg-white/80 backdrop-blur-sm rounded-2xl sm:rounded-3xl p-3 sm:p-4 shadow-md hover:shadow-lg transition-all duration-300 border border-warm-blue-100/30 group hover:-translate-y-1 min-h-[72px] sm:min-h-[64px] flex items-center">
-                  <p className="text-sm sm:text-base text-warm-beige-700 leading-relaxed flex">
+                <div className="flex-1 bg-white/80 backdrop-blur-sm rounded-2xl sm:rounded-3xl py-4 px-3 sm:p-4 shadow-md hover:shadow-lg transition-all duration-300 border border-warm-blue-100/30 group">
+                  <p className="text-sm sm:text-base text-warm-beige-700 leading-relaxed flex items-center">
                     <span className="font-semibold text-warm-beige-900 inline-block w-16 sm:w-20">Week {item.week}</span>
                     <span className="mx-2">|</span>
                     <span className="flex-1">{item.topic}</span>
@@ -194,7 +194,7 @@ export default function WhatYoullGet() {
       </div>
 
       {/* Footer */}
-      <footer className="fixed bottom-0 left-0 right-0 z-50 border-t border-warm-beige-200/50 backdrop-blur-md bg-gradient-to-br from-sky-100/95 via-blue-50/95 to-pink-50/95 py-10">
+      <footer className="fixed bottom-0 left-0 right-0 z-50 border-t border-warm-beige-200/50 backdrop-blur-md bg-gradient-to-br from-sky-100/95 via-blue-50/95 to-pink-50/95 py-4 sm:py-10">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 text-center">
           <p className="text-warm-beige-600 text-sm font-light">
             &copy; 2025 Baby Bites. Made with care for your journey.
