@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
-import Link from 'next/link'
+import Navigation from '@/components/Navigation'
 
 const weeks = [
   { week: 1, topic: "Fertility 101" },
@@ -60,33 +60,7 @@ export default function WhatYoullGet() {
         <div className="absolute top-[450px] right-[8%] w-[460px] h-28 bg-white rounded-[100%] blur-[56px] opacity-76"></div>
       </div>
 
-      {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-br from-sky-100/95 via-blue-50/95 to-pink-50/95 backdrop-blur-md border-b border-white/20">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-4">
-        <div className="flex justify-between items-center">
-          <Link
-            href="/"
-            className="text-xl sm:text-2xl font-semibold text-warm-blue-400 hover:text-warm-blue-500 transition-colors tracking-tight"
-          >
-            Baby Bites
-          </Link>
-          <div className="flex gap-2 sm:gap-4">
-            <Link
-              href="/what-youll-get"
-              className="px-3 sm:px-6 py-2 sm:py-2.5 text-xs sm:text-base font-medium text-warm-blue-700 bg-white/80 backdrop-blur-sm rounded-full border border-warm-blue-200 shadow-sm whitespace-nowrap"
-            >
-              What You'll Get
-            </Link>
-            <Link
-              href="/why-we-built-this"
-              className="px-3 sm:px-6 py-2 sm:py-2.5 text-xs sm:text-base font-medium text-warm-beige-800 hover:text-warm-blue-700 bg-white/60 hover:bg-white/80 backdrop-blur-sm rounded-full transition-all duration-300 border border-warm-blue-100/50 hover:border-warm-blue-200 shadow-sm hover:shadow-md whitespace-nowrap"
-            >
-              Why We Built This
-            </Link>
-          </div>
-        </div>
-        </div>
-      </nav>
+      <Navigation currentPage="what-youll-get" />
 
       {/* Content */}
       <div className="flex-grow max-w-7xl mx-auto px-6 sm:px-8 lg:px-16 relative w-full pt-32 sm:pt-28 pb-32 sm:pb-36">
