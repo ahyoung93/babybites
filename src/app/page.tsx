@@ -55,16 +55,16 @@ export default function Home() {
           <Link href="/" className="text-xl sm:text-2xl font-semibold text-warm-blue-400 hover:text-warm-blue-500 transition-colors tracking-tight">
             Baby Bites
           </Link>
-          <div className="flex gap-3 sm:gap-4">
+          <div className="flex gap-2 sm:gap-4">
             <Link
               href="/what-youll-get"
-              className="px-4 sm:px-6 py-2 sm:py-2.5 text-sm sm:text-base font-medium text-warm-beige-800 hover:text-warm-blue-700 bg-white/60 hover:bg-white/80 backdrop-blur-sm rounded-full transition-all duration-300 border border-warm-blue-100/50 hover:border-warm-blue-200 shadow-sm hover:shadow-md"
+              className="px-3 sm:px-6 py-2 sm:py-2.5 text-xs sm:text-base font-medium text-warm-beige-800 hover:text-warm-blue-700 bg-white/60 hover:bg-white/80 backdrop-blur-sm rounded-full transition-all duration-300 border border-warm-blue-100/50 hover:border-warm-blue-200 shadow-sm hover:shadow-md whitespace-nowrap"
             >
               What You'll Get
             </Link>
             <Link
               href="/why-we-built-this"
-              className="px-4 sm:px-6 py-2 sm:py-2.5 text-sm sm:text-base font-medium text-warm-beige-800 hover:text-warm-blue-700 bg-white/60 hover:bg-white/80 backdrop-blur-sm rounded-full transition-all duration-300 border border-warm-blue-100/50 hover:border-warm-blue-200 shadow-sm hover:shadow-md"
+              className="px-3 sm:px-6 py-2 sm:py-2.5 text-xs sm:text-base font-medium text-warm-beige-800 hover:text-warm-blue-700 bg-white/60 hover:bg-white/80 backdrop-blur-sm rounded-full transition-all duration-300 border border-warm-blue-100/50 hover:border-warm-blue-200 shadow-sm hover:shadow-md whitespace-nowrap"
             >
               Why We Built This
             </Link>
