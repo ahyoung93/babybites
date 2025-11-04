@@ -36,8 +36,16 @@ export async function POST(request: Request) {
     )
   } catch (error) {
     console.error('Error saving email:', error)
+    // Return more detailed error for debugging
     return NextResponse.json(
-      { error: 'Failed to save email' },
+      {
+        error: 'Failed to save email',
+        details: error instanceof Error ? error.message : 'Unknown error',
+        envCheck: {
+          hasPostgresUrl: !!process.env.POSTGRES_URL,
+          hasPostgresUrlNonPooling: !!process.env.POSTGRES_URL_NON_POOLING
+        }
+      },
       { status: 500 }
     )
   }

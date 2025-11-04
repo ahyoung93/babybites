@@ -27,10 +27,13 @@ export default function Home() {
       if (response.ok) {
         router.push(`/thank-you?email=${encodeURIComponent(email)}`)
       } else {
-        alert('Something went wrong. Please try again.')
+        const errorData = await response.json()
+        console.error('Error details:', errorData)
+        alert(`Error: ${errorData.error}${errorData.details ? '\nDetails: ' + errorData.details : ''}`)
         setIsSubmitting(false)
       }
     } catch (error) {
+      console.error('Fetch error:', error)
       alert('Something went wrong. Please try again.')
       setIsSubmitting(false)
     }
