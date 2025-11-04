@@ -1,5 +1,3 @@
-import { sql } from '@vercel/postgres'
-
 export interface EmailSubmission {
   id: number
   email: string
@@ -7,9 +5,16 @@ export interface EmailSubmission {
   source_page?: string
 }
 
+// Helper to get sql instance
+async function getSql() {
+  const { sql } = await import('@vercel/postgres')
+  return sql
+}
+
 // Create the emails table if it doesn't exist
 export async function initDatabase() {
   try {
+    const sql = await getSql()
     await sql`
       CREATE TABLE IF NOT EXISTS email_submissions (
         id SERIAL PRIMARY KEY,
@@ -29,6 +34,7 @@ export async function initDatabase() {
 // Save email to database
 export async function saveEmail(email: string, sourcePage?: string): Promise<EmailSubmission> {
   try {
+    const sql = await getSql()
     const result = await sql`
       INSERT INTO email_submissions (email, source_page)
       VALUES (${email}, ${sourcePage})
@@ -46,6 +52,7 @@ export async function saveEmail(email: string, sourcePage?: string): Promise<Ema
 // Get all email submissions
 export async function getAllEmails(): Promise<EmailSubmission[]> {
   try {
+    const sql = await getSql()
     const result = await sql`
       SELECT * FROM email_submissions
       ORDER BY submitted_at DESC;
@@ -60,6 +67,7 @@ export async function getAllEmails(): Promise<EmailSubmission[]> {
 // Get count of email submissions
 export async function getEmailCount(): Promise<number> {
   try {
+    const sql = await getSql()
     const result = await sql`
       SELECT COUNT(*) as count FROM email_submissions;
     `
