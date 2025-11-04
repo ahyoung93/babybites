@@ -51,8 +51,19 @@ export async function POST(request: Request) {
   }
 }
 
-export async function GET() {
+export async function GET(request: Request) {
   try {
+    // Check for admin password
+    const authHeader = request.headers.get('authorization')
+    const adminPassword = process.env.ADMIN_PASSWORD
+
+    if (!adminPassword || !authHeader || authHeader !== `Bearer ${adminPassword}`) {
+      return NextResponse.json(
+        { error: 'Unauthorized' },
+        { status: 401 }
+      )
+    }
+
     await ensureDbInitialized()
 
     const emails = await getAllEmails()
