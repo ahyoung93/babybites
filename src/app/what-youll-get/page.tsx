@@ -157,7 +157,7 @@ export default function WhatYoullGet() {
                 </div>
 
                 {/* Content Card */}
-                <div className="flex-1 bg-white/80 backdrop-blur-sm rounded-2xl sm:rounded-3xl p-3 sm:p-4 shadow-md hover:shadow-lg transition-all duration-300 border border-warm-blue-100/30 group hover:-translate-y-1">
+                <div className="flex-1 bg-white/80 backdrop-blur-sm rounded-2xl sm:rounded-3xl p-3 sm:p-4 shadow-md hover:shadow-lg transition-all duration-300 border border-warm-blue-100/30 group hover:-translate-y-1 min-h-[60px] sm:min-h-[64px] flex items-center">
                   <p className="text-sm sm:text-base text-warm-beige-700 leading-relaxed flex">
                     <span className="font-semibold text-warm-beige-900 inline-block w-16 sm:w-20">Week {item.week}</span>
                     <span className="mx-2">|</span>
