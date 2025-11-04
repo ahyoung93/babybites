@@ -41,7 +41,7 @@ export default function Privacy() {
       </nav>
 
       {/* Content */}
-      <div className="flex-grow max-w-4xl mx-auto px-6 sm:px-8 lg:px-16 relative w-full pt-24 sm:pt-28 pb-32 sm:pb-36">
+      <div className="flex-grow max-w-4xl mx-auto px-6 sm:px-8 lg:px-16 relative w-full pt-32 sm:pt-28 pb-32 sm:pb-36">
         <div className="bg-white/90 backdrop-blur-sm rounded-3xl p-8 sm:p-12 shadow-xl border border-warm-blue-100/30">
           <h1 className="text-3xl sm:text-4xl font-semibold text-warm-beige-900 mb-4">Privacy Policy</h1>
           <p className="text-sm text-warm-beige-600 mb-8">Last updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>

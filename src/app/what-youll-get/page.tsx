@@ -89,7 +89,7 @@ export default function WhatYoullGet() {
       </nav>
 
       {/* Content */}
-      <div className="flex-grow max-w-7xl mx-auto px-6 sm:px-8 lg:px-16 relative w-full pt-24 sm:pt-28 pb-32 sm:pb-36">
+      <div className="flex-grow max-w-7xl mx-auto px-6 sm:px-8 lg:px-16 relative w-full pt-32 sm:pt-28 pb-32 sm:pb-36">
         <div className="text-center mb-12 sm:mb-16 animate-fade-in-up">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-light text-warm-beige-900 mb-6 tracking-tight">
             What You'll Get

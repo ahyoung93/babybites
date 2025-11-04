@@ -49,7 +49,7 @@ function ThankYouContent() {
       </nav>
 
       {/* Content */}
-      <div className="flex-grow max-w-7xl mx-auto px-6 sm:px-8 lg:px-16 relative w-full pt-24 sm:pt-28 pb-32 sm:pb-36">
+      <div className="flex-grow max-w-7xl mx-auto px-6 sm:px-8 lg:px-16 relative w-full pt-32 sm:pt-28 pb-32 sm:pb-36">
       <div className="max-w-3xl text-center mx-auto animate-fade-in-up">
         {/* Success Icon */}
         <div className="mb-6 sm:mb-8">

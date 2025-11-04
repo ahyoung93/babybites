@@ -74,7 +74,7 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <div className="flex-grow relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 w-full pt-28 sm:pt-32 pb-32 sm:pb-36">
+      <div className="flex-grow relative z-10 max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 w-full pt-36 sm:pt-32 pb-32 sm:pb-36">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Side - Content */}
           <div className="space-y-8">
