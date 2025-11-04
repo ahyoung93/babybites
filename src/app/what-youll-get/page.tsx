@@ -148,12 +148,12 @@ export default function WhatYoullGet() {
               <div key={item.week} className="relative flex items-start gap-4 sm:gap-6 pb-8 sm:pb-10 last:pb-0">
                 {/* Vertical Line */}
                 {index !== weeks.length - 1 && (
-                  <div className="absolute left-[19px] sm:left-[23px] top-[48px] sm:top-[52px] w-0.5 h-[calc(100%-48px)] sm:h-[calc(100%-52px)] bg-gradient-to-b from-warm-blue-300 to-soft-pink-200"></div>
+                  <div className="absolute left-[21px] sm:left-[23px] top-[48px] sm:top-[52px] w-0.5 h-[calc(100%-48px)] sm:h-[calc(100%-52px)] bg-gradient-to-b from-warm-blue-300 to-soft-pink-200"></div>
                 )}
 
                 {/* Circle */}
-                <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-br from-warm-blue-500 to-soft-pink-500 flex items-center justify-center shadow-lg z-10">
-                  <span className="text-white font-bold text-sm sm:text-base">{item.week}</span>
+                <div className="flex-shrink-0 w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-gradient-to-br from-warm-blue-500 to-soft-pink-500 flex items-center justify-center shadow-lg z-10">
+                  <span className="text-white font-bold text-sm sm:text-base tabular-nums">{item.week}</span>
                 </div>
 
                 {/* Content Card */}
