@@ -7,9 +7,10 @@ export interface EmailSubmission {
   source_page?: string
 }
 
-// Create a connection pool
+// Create a connection pool - use POSTGRES_URL_NON_POOLING with createPool
+// or POSTGRES_PRISMA_URL which is the pooled connection
 const pool = createPool({
-  connectionString: process.env.POSTGRES_URL,
+  connectionString: process.env.POSTGRES_PRISMA_URL || process.env.POSTGRES_URL,
 })
 
 // Create the emails table if it doesn't exist
