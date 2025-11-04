@@ -1,4 +1,4 @@
-import { createPool } from '@vercel/postgres'
+import { sql } from '@vercel/postgres'
 
 export interface EmailSubmission {
   id: number
@@ -7,16 +7,10 @@ export interface EmailSubmission {
   source_page?: string
 }
 
-// Create a connection pool - use POSTGRES_URL_NON_POOLING with createPool
-// or POSTGRES_PRISMA_URL which is the pooled connection
-const pool = createPool({
-  connectionString: process.env.POSTGRES_PRISMA_URL || process.env.POSTGRES_URL,
-})
-
 // Create the emails table if it doesn't exist
 export async function initDatabase() {
   try {
-    await pool.sql`
+    await sql`
       CREATE TABLE IF NOT EXISTS email_submissions (
         id SERIAL PRIMARY KEY,
         email VARCHAR(255) NOT NULL,
@@ -35,7 +29,7 @@ export async function initDatabase() {
 // Save email to database
 export async function saveEmail(email: string, sourcePage?: string): Promise<EmailSubmission> {
   try {
-    const result = await pool.sql`
+    const result = await sql`
       INSERT INTO email_submissions (email, source_page)
       VALUES (${email}, ${sourcePage})
       ON CONFLICT (email) DO UPDATE
@@ -52,7 +46,7 @@ export async function saveEmail(email: string, sourcePage?: string): Promise<Ema
 // Get all email submissions
 export async function getAllEmails(): Promise<EmailSubmission[]> {
   try {
-    const result = await pool.sql`
+    const result = await sql`
       SELECT * FROM email_submissions
       ORDER BY submitted_at DESC;
     `
@@ -66,7 +60,7 @@ export async function getAllEmails(): Promise<EmailSubmission[]> {
 // Get count of email submissions
 export async function getEmailCount(): Promise<number> {
   try {
-    const result = await pool.sql`
+    const result = await sql`
       SELECT COUNT(*) as count FROM email_submissions;
     `
     return parseInt(result.rows[0].count)
