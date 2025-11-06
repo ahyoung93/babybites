@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://babybites.com' // Update with your actual domain
+  const baseUrl = 'https://babybites.io'
 
   return [
     {
