@@ -1,10 +1,10 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy - Baby Bites',
+  title: 'Privacy Policy - Baby Dust',
   description: 'Our commitment to protecting your privacy. Learn how we collect, use, and protect your information.',
   openGraph: {
-    title: 'Privacy Policy - Baby Bites',
+    title: 'Privacy Policy - Baby Dust',
     description: 'Our commitment to protecting your privacy. Learn how we collect, use, and protect your information.',
   },
 }

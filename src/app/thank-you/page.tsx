@@ -41,7 +41,7 @@ function ThankYouContent() {
         </div>
 
         <p className="text-lg sm:text-xl lg:text-2xl text-warm-beige-800 mb-6 sm:mb-8 max-w-2xl mx-auto leading-relaxed">
-          Thanks for joining Baby Bites.
+          Thanks for joining Baby Dust.
         </p>
 
         {email && (
@@ -121,7 +121,7 @@ function ThankYouContent() {
               We built this because we needed it, too. We're parents in tech who believe trying to conceive deserves better support. Thank you for trusting us.
             </p>
             <p className="text-warm-beige-600 font-medium">
-              – The Baby Bites Team
+              – The Baby Dust Team
             </p>
           </div>
         </div>
@@ -132,7 +132,7 @@ function ThankYouContent() {
       <footer className="fixed bottom-0 left-0 right-0 z-50 border-t border-warm-beige-200/50 backdrop-blur-md bg-gradient-to-br from-sky-100/95 via-blue-50/95 to-pink-50/95 py-4 sm:py-10">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 text-center">
           <p className="text-warm-beige-600 text-sm font-light">
-            &copy; 2025 Baby Bites. Made with care for your journey.
+            &copy; 2025 Baby Dust. Made with care for your journey.
             {' · '}
             <a href="/privacy" className="hover:text-warm-blue-500 transition-colors">Privacy Policy</a>
           </p>

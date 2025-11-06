@@ -25,7 +25,7 @@ export default function Privacy() {
             <section>
               <h2 className="text-2xl font-semibold text-warm-beige-900 mt-8 mb-4">1. Introduction</h2>
               <p className="leading-relaxed">
-                Welcome to Baby Bites ("we," "our," or "us"). We respect your privacy and are committed to protecting your personal data. This privacy policy explains how we collect, use, and protect your information when you visit our website and subscribe to our newsletter.
+                Welcome to Baby Dust ("we," "our," or "us"). We respect your privacy and are committed to protecting your personal data. This privacy policy explains how we collect, use, and protect your information when you visit our website and subscribe to our newsletter.
               </p>
             </section>
 
@@ -126,10 +126,10 @@ export default function Privacy() {
             <section>
               <h2 className="text-2xl font-semibold text-warm-beige-900 mt-8 mb-4">11. Contact Us</h2>
               <p className="leading-relaxed">
-                If you have any questions about this privacy policy or want to exercise your rights, please contact us by responding to any email from Baby Bites.
+                If you have any questions about this privacy policy or want to exercise your rights, please contact us by responding to any email from Baby Dust.
               </p>
               <p className="leading-relaxed mt-4">
-                <strong>Email:</strong> Reply to any Baby Bites email
+                <strong>Email:</strong> Reply to any Baby Dust email
                 <br />
                 <strong>Response Time:</strong> We respond within 24 hours
               </p>
@@ -171,7 +171,7 @@ export default function Privacy() {
       <footer className="fixed bottom-0 left-0 right-0 z-50 border-t border-warm-beige-200/50 backdrop-blur-md bg-gradient-to-br from-sky-100/95 via-blue-50/95 to-pink-50/95 py-4 sm:py-10">
         <div className="max-w-7xl mx-auto px-6 sm:px-8 text-center">
           <p className="text-warm-beige-600 text-sm font-light">
-            &copy; 2025 Baby Bites. Made with care for your journey.
+            &copy; 2025 Baby Dust. Made with care for your journey.
           </p>
         </div>
       </footer>

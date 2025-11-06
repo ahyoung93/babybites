@@ -15,7 +15,7 @@ export default function Navigation({ currentPage }: NavigationProps) {
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 py-6">
         <div className="flex justify-between items-center">
           <Link href="/" className="text-xl sm:text-2xl font-semibold text-warm-blue-400 hover:text-warm-blue-500 transition-colors tracking-tight">
-            Baby Bites
+            Baby Dust
           </Link>
 
           {/* Desktop Navigation */}

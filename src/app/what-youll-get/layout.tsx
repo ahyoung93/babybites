@@ -1,10 +1,10 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'What You\'ll Get - Baby Bites',
+  title: 'What You\'ll Get - Baby Dust',
   description: 'Weekly bite-sized lessons designed to empower your fertility journey. Your 10-week curriculum reviewed by OB/GYNs.',
   openGraph: {
-    title: 'What You\'ll Get - Baby Bites',
+    title: 'What You\'ll Get - Baby Dust',
     description: 'Weekly bite-sized lessons designed to empower your fertility journey. Your 10-week curriculum reviewed by OB/GYNs.',
   },
 }

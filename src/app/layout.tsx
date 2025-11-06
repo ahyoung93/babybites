@@ -5,12 +5,12 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Baby Bites - Conceive with Clarity',
+  title: 'Baby Dust - Conceive with Clarity',
   description: '5 minutes a week, 10 weeks to clarity. Step-by-step guidance reviewed by OB/GYNs. Your fertility journey deserves clarity.',
   keywords: ['fertility', 'trying to conceive', 'TTC', 'pregnancy', 'conception', 'fertility tips', 'OBGYN', 'preconception'],
-  authors: [{ name: 'Baby Bites Team' }],
-  creator: 'Baby Bites',
-  publisher: 'Baby Bites',
+  authors: [{ name: 'Baby Dust Team' }],
+  creator: 'Baby Dust',
+  publisher: 'Baby Dust',
   metadataBase: new URL('https://babybites.com'), // Update this with your actual domain
   alternates: {
     canonical: '/',
@@ -19,21 +19,21 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://babybites.com',
-    title: 'Baby Bites - Conceive with Clarity',
+    title: 'Baby Dust - Conceive with Clarity',
     description: '5 minutes a week, 10 weeks to clarity. Step-by-step guidance reviewed by OB/GYNs.',
-    siteName: 'Baby Bites',
+    siteName: 'Baby Dust',
     images: [
       {
         url: '/og-image.png', // We'll create this
         width: 1200,
         height: 630,
-        alt: 'Baby Bites - Fertility guidance reviewed by OB/GYNs',
+        alt: 'Baby Dust - Fertility guidance reviewed by OB/GYNs',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Baby Bites - Conceive with Clarity',
+    title: 'Baby Dust - Conceive with Clarity',
     description: '5 minutes a week, 10 weeks to clarity. Step-by-step guidance reviewed by OB/GYNs.',
     images: ['/og-image.png'],
   },
