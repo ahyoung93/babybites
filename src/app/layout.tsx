@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    // google: 'your-google-site-verification-code', // Add after setting up Search Console
+    google: '6vHoYNO4OG2II9FtU66wVT2AvKdJobJEN3JVOjq2F2E',
   },
 }
 
