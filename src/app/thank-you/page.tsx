@@ -41,7 +41,7 @@ function ThankYouContent() {
         </div>
 
         <p className="text-lg sm:text-xl lg:text-2xl text-warm-beige-800 mb-6 sm:mb-8 max-w-2xl mx-auto leading-relaxed">
-          Thanks for joining Baby Dust.
+          Thanks for joining Baby Dust
         </p>
 
         {email && (
@@ -67,7 +67,7 @@ function ThankYouContent() {
                   A welcome email
                 </h3>
                 <p className="text-warm-beige-700 leading-relaxed text-sm sm:text-base">
-                  is heading to your inbox by end of day today.
+                  is heading to your inbox by end of day today
                 </p>
               </div>
             </div>
@@ -83,7 +83,7 @@ function ThankYouContent() {
                   Your first issue
                 </h3>
                 <p className="text-warm-beige-700 leading-relaxed text-sm sm:text-base">
-                  will arrive this Sunday.
+                  will arrive this Sunday
                 </p>
               </div>
             </div>
@@ -99,7 +99,7 @@ function ThankYouContent() {
                   Reach us
                 </h3>
                 <p className="text-warm-beige-700 leading-relaxed text-sm sm:text-base">
-                  by responding to any emails from us. We respond within 24 hours.
+                  by responding to any emails from us. We respond within 24 hours
                 </p>
               </div>
             </div>
