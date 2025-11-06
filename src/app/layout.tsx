@@ -11,14 +11,14 @@ export const metadata: Metadata = {
   authors: [{ name: 'Baby Dust Team' }],
   creator: 'Baby Dust',
   publisher: 'Baby Dust',
-  metadataBase: new URL('https://babybites.io'),
+  metadataBase: new URL('https://babydust.io'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://babybites.io',
+    url: 'https://babydust.io',
     title: 'Baby Dust - Conceive with Clarity',
     description: '5 minutes a week, 10 weeks to clarity. Step-by-step guidance reviewed by OB/GYNs.',
     siteName: 'Baby Dust',
